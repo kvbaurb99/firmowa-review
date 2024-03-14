@@ -1,0 +1,39 @@
+{
+  "name": "firmowa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy:local": "next build && pm2 startOrRestart ecosystem.config.js --env local",
+    "deploy:dev": "next build && pm2 startOrRestart ecosystem.config.js --env development",
+    "deploy:prod": "next build && pm2 startOrRestart ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^6.4.14",
+    "mobile-detect": "^1.4.5",
+    "next": "14.1.0",
+    "next-seo": "^6.5.0",
+    "nodemailer": "^6.9.11",
+    "pm2": "^5.3.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.8.1",
+    "sharp": "^0.33.2",
+    "swiper": "^11.0.7",
+    "tailwind-scrollbar-hide": "^1.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

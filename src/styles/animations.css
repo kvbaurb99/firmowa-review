@@ -1,0 +1,195 @@
+@keyframes FromBottom {
+  from {
+    transform: translateY(300px) translateX(150px);
+    opacity: 50;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+@keyframes WindowFromTop {
+  from {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+@keyframes Scale {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 100;
+  }
+}
+
+@keyframes BottomTitle {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes SpinAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes LeafShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes FromRight {
+  from {
+    transform: translateX(100px) translateY(-100px);
+    opacity: 50;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes Confetti {
+  0% {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 100;
+  }
+}
+
+.animation-confetti {
+  animation: Confetti 1s forwards;
+}
+
+.animation-from-right {
+  transform: translateX(100px) translateY(-100px);
+  animation: FromRight 1.5s 1.5s forwards;
+}
+
+.animation-bottom-title {
+  animation: BottomTitle 1s ease-in-out;
+}
+
+.animation-shake {
+  animation: LeafShake 2s ease-in-out;
+}
+
+.animation-rotate {
+  animation: SpinAnimation 8s linear infinite;
+}
+
+.animation-fade-in {
+  opacity: 0;
+  animation: FadeIn 2s forwards;
+}
+
+.animation-from-bottom {
+  transform: translateY(300px) translateX(150px);
+  animation: FromBottom 1.5s forwards;
+}
+
+.animation-scale {
+  opacity: 0;
+  animation: Scale 0.6s 0.1s forwards;
+}
+
+.animation-scale-two {
+  opacity: 0;
+  animation: Scale 0.6s 0.6s forwards;
+}
+
+.animation-scale-three {
+  opacity: 0;
+  animation: Scale 0.6s 1.1s forwards;
+}
+
+.animation-window {
+  transform: translateY(-150px);
+  opacity: 0;
+  animation: WindowFromTop 0.8s 0.1s forwards;
+}
+
+.animation-window-two {
+  transform: translateY(-150px);
+  opacity: 0;
+  animation: WindowFromTop 0.8s 0.4s forwards;
+}
+
+.animation-window-three {
+  transform: translateY(-150px);
+  opacity: 0;
+  animation: WindowFromTop 0.8s 0.9s forwards;
+}
+
+.animation-window-four {
+  transform: translateY(-150px);
+  opacity: 0;
+  animation: WindowFromTop 0.8s 1.3s forwards;
+}
+
+@media (max-width: 767px) {
+  .animation-scale,
+  .animation-scale-two,
+  .animation-scale-three {
+    opacity: 100;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .animation-bottom-title {
+    opacity: 100;
+    animation: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .animation-window,
+  .animation-window-two,
+  .animation-window-three,
+  .animation-window-four {
+    opacity: 100;
+    transform: translateY(0);
+    animation: none !important;
+  }
+}

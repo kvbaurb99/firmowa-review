@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Specjalista ds SEO/Content Marketingu",
+    "additional": [
+      {
+        "title": "Praca zdalna"
+      },
+      {
+        "title": "Employee"
+      },
+      {
+        "title": "SEO Specialist"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Marketing i WordPress Ekspert",
+    "additional": [
+      {
+        "title": "Praca zdalna"
+      },
+      {
+        "title": "Employee"
+      },
+      {
+        "title": "SEO Specialist"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Specjalista ds Webdesignu Figma",
+    "additional": [
+      {
+        "title": "Praca zdalna"
+      },
+      {
+        "title": "Employee"
+      },
+      {
+        "title": "SEO Specialist"
+      }
+    ]
+  }
+]
